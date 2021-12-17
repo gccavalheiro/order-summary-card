@@ -50,7 +50,6 @@ button {
   border: 0;
   cursor: pointer;
   background-color: transparent;
-  transition: .3s;
 }
 
 main {
