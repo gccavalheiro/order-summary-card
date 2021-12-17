@@ -1,0 +1,237 @@
+:root {
+  --primary-pale-blue: hsl(225, 100%, 94%);
+  --secondary-bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue:hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --variant-blue: hsl(245, 83%, 68%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 1rem;
+  background-color: var(--primary-pale-blue);
+  background-image: url('../images/pattern-background-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: var(--secondary-bright-blue);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--variant-blue);
+}
+
+button {
+  font-family: 'Red Hat Display', sans-serif;
+  border: 0;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 450px;
+  border-radius: 20px;
+  background-color: var(--white);
+}
+
+.card-header {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card-info h1{
+  font-size: 1.75rem;
+  color: var(--dark-blue);
+  font-weight: 900;
+}
+
+.card-info p{
+  font-size: 1rem;
+  color: var(--desaturated-blue);
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  line-height: 1.8;
+  margin: 24px 0;
+}
+
+.card-plan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: var(--very-pale-blue);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.card-plan-detail {
+  display: flex;
+  align-items: center;
+}
+
+.card-plan-icon-detail {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  min-height: 48px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.card-plan-icon-detail img {
+  object-fit: cover;
+}
+
+.card-plan-info-detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-plan-info-detail h2, .card-plan-info-detail p {
+  font-size: 1rem;
+}
+.card-plan-info-detail h2 {
+  font-weight: 900;
+  color: var(--dark-blue);
+  margin-bottom: 4px;
+}
+
+.card-plan-info-detail p {
+  color: var(--desaturated-blue);
+  font-size: 700;
+}
+
+.card-plan-button {
+  font-size: .825rem;
+  color: var(--secondary-bright-blue);
+  background-color: transparent;
+  text-decoration: underline;
+  font-weight: 700;
+  border: 0;
+  transition: .3s;
+  margin-top: 20px;
+}
+
+.card-plan-button:hover {
+  color: var(--variant-blue);
+}
+
+.card-button-payment{
+  font-weight: 900;
+  padding: 16px 0;
+  width: 100%;
+  color: var(--white);
+  background-color: var(--secondary-bright-blue);
+  border-radius: 8px;
+  margin: 32px 0;
+}
+
+.card-button-payment:hover {
+  background-color: var(--variant-blue);
+}
+
+.card-button-cancel{
+  font-weight: 900;
+  color: var(--desaturated-blue);
+}
+
+.card-button-cancel:hover {
+  color: var(--dark-blue);
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--very-pale-blue);
+  padding: 28px 0;
+  color: var(--desaturated-blue);
+  text-align: center;
+  line-height: 23px;
+}
+
+footer p {
+  padding: 0 20px;
+}
+
+@media screen and (min-width: 374.9px) {
+ .card-plan {
+    flex-direction: row;
+  }
+
+  .card-plan-button {
+    margin-top: 0;
+  }
+
+  footer p {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 767.9px) {
+  body {
+    background-image: url('../images/pattern-background-desktop.svg');
+  }
+
+  main {
+    padding: 0;
+  }
+
+  .card-body {
+    padding: 48px;
+  } 
+
+  .card-plan {
+    padding: 24px;
+  }
+}

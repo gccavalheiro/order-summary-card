@@ -1,0 +1,74 @@
+:root {
+  --primary-pale-blue: hsl(225, 100%, 94%);
+  --secondary-bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue:hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --variant-blue: hsl(245, 83%, 68%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 1rem;
+  background-color: var(--primary-pale-blue);
+  background-image: url('../images/pattern-background-desktop.svg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+}
+
+img {
+  width: 100%;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 450px;
+  border-radius: 20px;
+  background-color: var(--white);
+}
+
+.card-header {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  overflow: hidden;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px;
+}
+
+.card-info{}
+.card-plan{}
+.card-plan-detail{}
+.card-plan-icon-detail{}
+.card-plan-info-detail{}
+.card-plan-button{}
+.card-button-payment{}
+.card-button-cancel{}
